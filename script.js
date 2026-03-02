@@ -1,6 +1,16 @@
 document.getElementById("Menubtn")
 document.getElementById("Contenedor")
 
+window.addEventListener("scroll", () => {
+    const progress = document.getElementById("progress");
+    const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progressPct = (window.scrollY / totalHeight) * 100;
+    
+    if (progress) {
+        progress.style.width = progressPct + "%";
+    }
+});
+
 Menubtn.addEventListener("click", function(){
   Contenedor.classList.toggle("oculto");
 });
@@ -23,4 +33,5 @@ window.addEventListener("scroll", function() {
             }, 1000);
         }
  iniciarReloj();
+
 
