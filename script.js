@@ -22,4 +22,5 @@ window.addEventListener("scroll", function() {
                 display.textContent = tiempo;
             }, 1000);
         }
+ iniciarReloj();
 
