@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulpogames | Inicio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1 class="logo" id="mainLogo">Pulpogames</h1>
+        
+        <div class="search-wrapper">
+            <input type="text" id="searchBar" placeholder="Buscar en la tienda...">
+            <div id="searchOverlay" class="search-suggestions"></div>
+        </div>
+
+        <div class="nav-actions">
+            <button id="loginBtn" class="action-icon">👤</button>
+            <div class="cart-wrapper">
+                <button id="cartBtn" class="action-icon">🛒</button>
+                <span id="cartCount">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="home-container">
+        <div class="nav-card xbox" onclick="window.location.href='../Videojuegos/videojuegos.html'">
+            <div class="brand-content">
+                <span class="brand-symbol">XBOX</span>
+            </div>
+            <div class="info-overlay">
+                <h2>Videojuegos</h2>
+                <p>Explora el catálogo premium de 8 títulos seleccionados.</p>
+            </div>
+        </div>
+
+        <div class="nav-card nintendo" onclick="window.location.href='../Mantenimiento/mantenimiento.html'">
+            <div class="brand-content">
+                <span class="brand-symbol">SWITCH</span>
+            </div>
+            <div class="info-overlay">
+                <h2>Mantenimiento</h2>
+                <p>Agenda tu cita técnica con nuestro calendario visual.</p>
+            </div>
+        </div>
+
+        <div class="nav-card playstation" onclick="window.location.href='../Consolas/consolas.html'">
+            <div class="brand-content">
+                <span class="brand-symbol">PS5</span>
+            </div>
+            <div class="info-overlay">
+                <h2>Consolas</h2>
+                <p>Plan Renace: recibimos tu consola usada en parte de pago.</p>
+            </div>
+        </div>
+
+        <div class="nav-card steam" onclick="window.location.href='../TCG/tsg.html'">
+            <div class="brand-content">
+                <span class="brand-symbol">STEAM</span>
+            </div>
+            <div class="info-overlay">
+                <h2>Figuras & TCG</h2>
+                <p>Coleccionables premium, figuras y cartas TCG.</p>
+            </div>
+        </div>
+    </main>
+
+    <div id="sideCart" class="side-drawer">
+        <div class="drawer-header">
+            <h3>Tu Carrito (COP)</h3>
+            <button id="closeCart">X</button>
+        </div>
+        <div id="cartItems"></div>
+        <button class="checkout-btn">Finalizar Compra</button>
+    </div>
+
+    <div id="modalUser" class="user-modal">
+        <div class="modal-body">
+            <h2>Acceso Clientes</h2>
+            <input type="text" placeholder="Usuario">
+            <input type="password" placeholder="Contraseña">
+            <button class="btn-login">Ingresar</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

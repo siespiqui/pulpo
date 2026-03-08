@@ -1,0 +1,143 @@
+/* Variables de Marca */
+:root {
+    --púrpura: #672E8C;
+    --aquamarine: #04BFAD;
+    --blanco: #ffffff;
+    --negro: #1a1a1a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    background-color: var(--púrpura);
+    color: var(--blanco);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    overflow: hidden; /* Evita scroll en la home principal */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.search-wrapper input {
+    width: 350px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid var(--aquamarine);
+    background: transparent;
+    color: white;
+}
+
+.action-icon {
+    background: none;
+    border: none;
+    color: var(--aquamarine);
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.action-icon:hover { color: var(--blanco); }
+
+/* Grid de 4 Tarjetas */
+.home-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 85vh;
+    padding: 20px;
+    gap: 15px;
+}
+
+.nav-card {
+    background: var(--blanco);
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.nav-card:hover { transform: translateY(-10px); }
+
+/* Bordes por Consola */
+.xbox { border: 8px solid #107C10; }
+.nintendo { border: 8px solid #E60012; }
+.playstation { border: 8px solid #00439C; }
+.steam { border: 8px solid #2A475E; }
+
+.brand-symbol {
+    color: #333;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Overlay de Información */
+.info-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--aquamarine);
+    color: var(--púrpura);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.nav-card:hover .info-overlay { opacity: 1; }
+
+/* Modal y Blur */
+.user-modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(25px); /* Desenfoque solicitado */
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.modal-body {
+    background: var(--blanco);
+    padding: 40px;
+    border-radius: 20px;
+    color: var(--púrpura);
+    width: 350px;
+}
+
+/* Carrito Side Drawer */
+.side-drawer {
+    position: fixed;
+    right: -400px;
+    top: 0;
+    width: 350px;
+    height: 100%;
+    background: var(--blanco);
+    color: var(--púrpura);
+    transition: 0.4s;
+    padding: 30px;
+    z-index: 1500;
+}
+
+.side-drawer.active { right: 0; }
