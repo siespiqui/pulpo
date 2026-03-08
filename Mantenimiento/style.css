@@ -1,0 +1,84 @@
+/* Estilos Mantenimiento */
+.maintenance-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    padding: 20px;
+}
+
+.form-card {
+    background: var(--blanco);
+    color: var(--púrpura);
+    padding: 40px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.form-header h2 {
+    margin: 0;
+    color: var(--púrpura);
+    font-size: 1.8rem;
+}
+
+.form-header p {
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 0.9rem;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.input-group select, 
+.input-group input, 
+.input-group textarea {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group select:focus, 
+.input-group input:focus, 
+.input-group textarea:focus {
+    border-color: var(--aquamarine);
+}
+
+/* Estilo del Botón */
+.submit-btn {
+    background: var(--aquamarine);
+    color: var(--púrpura);
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: var(--púrpura);
+    color: var(--blanco);
+}
+
+/* Personalización del Datepicker */
+.visual-datepicker {
+    cursor: pointer;
+    background: #f9f9f9;
+}

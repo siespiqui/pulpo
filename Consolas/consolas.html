@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulpogames | Hardware & Plan Renace</title>
+    <link rel="stylesheet" href="../home/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1 class="logo" id="mainLogo" onclick="window.location.href='index.html'">Pulpogames</h1>
+        <div class="search-wrapper">
+            <input type="text" id="searchBar" placeholder="¿Qué consola buscas?">
+        </div>
+        <div class="nav-actions">
+            <button id="loginBtn" class="action-icon">👤</button>
+            <div class="cart-wrapper">
+                <button id="cartBtn" class="action-icon">🛒</button>
+                <span id="cartCount">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="consoles-page">
+        <section class="trade-in-hero">
+            <div class="hero-text">
+                <h1>PLAN RENACE 🔄</h1>
+                <p>No dejes que tu consola vieja coja polvo. <strong>La recibimos en parte de pago</strong> para que te lleves la nueva generación hoy mismo.</p>
+                <button class="cta-button" onclick="window.location.href='https://wa.me/tu-numero'">Cotizar mi Consola</button>
+            </div>
+            <div class="hero-image">
+                <div class="console-box">NEW GEN</div>
+            </div>
+        </section>
+
+        <section class="hardware-info">
+            <h2>Hardware Disponible</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h3>Xbox Series X/S</h3>
+                    <p>Potencia pura y Game Pass integrado.</p>
+                </div>
+                <div class="info-item">
+                    <h3>PlayStation 5</h3>
+                    <p>Inmersión total con el DualSense.</p>
+                </div>
+                <div class="info-item">
+                    <h3>Nintendo Switch OLED</h3>
+                    <p>La mejor pantalla para jugar donde quieras.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../home/main.js"></script>
+</body>
+</html>

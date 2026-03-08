@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulpogames | Servicio Técnico</title>
+    <link rel="stylesheet" href="../home/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1 class="logo" id="mainLogo" onclick="window.location.href='index.html'">Pulpogames</h1>
+        <div class="search-wrapper">
+            <input type="text" id="searchBar" placeholder="¿Problemas con tu consola?">
+        </div>
+        <div class="nav-actions">
+            <button id="loginBtn" class="action-icon">👤</button>
+            <div class="cart-wrapper">
+                <button id="cartBtn" class="action-icon">🛒</button>
+                <span id="cartCount">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="maintenance-container">
+        <div class="form-card">
+            <div class="form-header">
+                <h2>Agendar Mantenimiento</h2>
+                <p>Especialistas en Joy-Con, limpieza de PS5 y ventilación de Xbox.</p>
+            </div>
+            
+            <form id="maintenanceForm">
+                <div class="input-group">
+                    <label>Tipo de Consola</label>
+                    <select required>
+                        <option value="">Selecciona tu equipo</option>
+                        <option value="ps5">PlayStation 5</option>
+                        <option value="xbox">Xbox Series X/S</option>
+                        <option value="switch">Nintendo Switch</option>
+                        <option value="pc">PC Gaming</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Fecha del Servicio</label>
+                    <input type="date" id="serviceDate" required class="visual-datepicker">
+                </div>
+
+                <div class="input-group">
+                    <label>Descripción de la Falla</label>
+                    <textarea placeholder="Ej: Mi consola se sobrecalienta o el control tiene drift..." rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Solicitar Cita Técnica</button>
+            </form>
+        </div>
+    </main>
+
+    <div id="sideCart" class="side-drawer">
+        <div class="drawer-header"><h3>Carrito</h3><button id="closeCart">X</button></div>
+        <div id="cartItems"></div>
+        <button class="checkout-btn">Finalizar Compra</button>
+    </div>
+
+    <script src="../home/main.js"></script>
+</body>
+</html>
