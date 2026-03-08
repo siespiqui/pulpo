@@ -1,2 +1,3 @@
-# pulpo
-aca se encuentra el proyecto de pulpo de la ficha 3321349 de el sena 2026 
+# Pulpo Games
+aca se encuentra el proyecto de Pulpo Games de la ficha 3321349 del Servicio Nacional de aprendizaje (SENA)
+
