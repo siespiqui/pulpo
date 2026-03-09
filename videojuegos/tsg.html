@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulpogames | Figuras & TCG</title>
+    <link rel="stylesheet" href="../home/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1 class="logo" id="mainLogo" onclick="window.location.href='index.html'">Pulpogames</h1>
+        <div class="search-wrapper">
+            <input type="text" id="searchBar" placeholder="Buscar figuras o cartas...">
+        </div>
+        <div class="nav-actions">
+            <button id="loginBtn" class="action-icon">👤</button>
+            <div class="cart-wrapper">
+                <button id="cartBtn" class="action-icon">🛒</button>
+                <span id="cartCount">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="collectible-page">
+        <div class="category-header">
+            <h2>Coleccionables Premium</h2>
+            <div class="filter-chips">
+                <span class="chip active">Todo</span>
+                <span class="chip">Figuras</span>
+                <span class="chip">Pokémon TCG</span>
+                <span class="chip">Yu-Gi-Oh!</span>
+            </div>
+        </div>
+
+        <div class="collectible-grid">
+            <div class="item-card tcg">
+                <div class="item-tag">TCG</div>
+                <img src="https://via.placeholder.com/200x280" alt="Carta Pokemon">
+                <div class="item-details">
+                    <h3>Elite Trainer Box - Pokémon</h3>
+                    <p class="item-price">185.000 COP</p>
+                    <button class="add-cart-btn" onclick="addToCart('ETB Pokemon', 185000)">Añadir</button>
+                </div>
+            </div>
+
+            <div class="item-card figure">
+                <div class="item-tag">Figura</div>
+                <img src="https://via.placeholder.com/200x280" alt="Figura Action">
+                <div class="item-details">
+                    <h3>Figura Spider-Man Marvel Legends</h3>
+                    <p class="item-price">145.000 COP</p>
+                    <button class="add-cart-btn" onclick="addToCart('Spiderman Legend', 145000)">Añadir</button>
+                </div>
+            </div>
+
+            </div>
+    </main>
+   </head>
+<body>
+    
+    <div class="reloj-inferior" id="reloj">00:00:00</div>
+
+
+
+    <script src="../home/main.js"></script>
+     <script src="1.js"></script>
+</body>
+</html>
