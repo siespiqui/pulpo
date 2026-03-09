@@ -1,0 +1,94 @@
+/* Estilos Página TCG & Figuras */
+.collectible-page {
+    padding: 30px 5%;
+    height: 85vh;
+    overflow-y: auto;
+}
+
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.filter-chips {
+    display: flex;
+    gap: 10px;
+}
+
+.chip {
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 1px solid var(--aquamarine);
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.chip.active, .chip:hover {
+    background: var(--aquamarine);
+    color: var(--púrpura);
+}
+
+/* Grid y Cards */
+.collectible-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.item-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 15px;
+    position: relative;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.item-card:hover {
+    border-color: var(--aquamarine);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.item-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--aquamarine);
+    color: var(--púrpura);
+    padding: 2px 10px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.item-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.item-details h3 {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.item-price {
+    color: var(--aquamarine);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.add-cart-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background: var(--aquamarine);
+    color: var(--púrpura);
+    font-weight: bold;
+    cursor: pointer;
+}
