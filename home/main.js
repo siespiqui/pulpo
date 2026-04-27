@@ -99,3 +99,19 @@ document.addEventListener("DOMContentLoaded", () => {
         };
     }
 });
+
+
+function validarLogin(event) {
+  event.preventDefault(); // Detiene el envío automático
+  
+  // Verifica si el captcha fue marcado
+  const response = grecaptcha.getResponse();
+  
+  if (response.length === 0) {
+    alert("Por favor, marca la casilla 'No soy un robot'");
+  } else {
+    alert("¡Validación exitosa! Enviando datos...");
+    // Aquí puedes proceder con el envío de tu formulario
+  }
+}
+

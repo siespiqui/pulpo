@@ -37,24 +37,47 @@
         </section>
 
         <section class="hardware-info">
-            <h2>Hardware Disponible</h2>
-            <div class="info-grid">
-                <div class="info-item">
-                    <h3>Xbox Series X/S</h3>
-                    <p>Potencia pura y Game Pass integrado.</p>
-                </div>
-                <div class="info-item">
-                    <h3>PlayStation 5</h3>
-                    <p>Inmersión total con el DualSense.</p>
-                </div>
-                <div class="info-item">
-                    <h3>Nintendo Switch OLED</h3>
-                    <p>La mejor pantalla para jugar donde quieras.</p>
-                </div>
-            </div>
-        </section>
-    </main>
+            <h2>Hardware y Accesorios Disponibles</h2>
+    
+  <!-- Botones de filtro -->
+  <div class="filtros">
+    <button class="btn-filtro">Todos</button>
+    <button class="btn-filtro">xbox</button>
+    <button class="btn-filtro">playstation</button>
+    <button class="btn-filtro">nintendo</button>
+     <button class="btn-filtro">accesorios</button>
+  </div>
+
+
+  <div class="container">
+    <!-- Cuadrícula de productos -->
+    <div id="productGrid" class="grid"></div>
+
+    <!-- Barra lateral del carrito -->
+    <div class="cart">
+      <h3>🛒 Carrito (<span id="count">0</span>)</h3>
+      <div id="cartItems"></div>
+      <div class="total">
+        Total: <span id="subtotal">$0</span>
+      </div>
+      <button class="finalizar-compra">Finalizar compra</button>
+    </div>
+  </div>
+
+  <!-- Modal de confirmación -->
+  <div id="overlay" class="overlay" style="display:none;">
+    <div class="modal">
+      <div class="check">✔</div>
+      <h2>¡Pedido confirmado!</h2>
+      <p id="mensajePedido"></p>
+      <button onclick="cerrarModal()">Seguir comprando</button>
+    </div>
+  </div>
 
     <script src="../home/main.js"></script>
+    <script src="Untitled-1.js"></script>
 </body>
 </html>
+
+
+

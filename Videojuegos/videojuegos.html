@@ -18,47 +18,77 @@
         <div class="nav-actions">
             <button id="loginBtn" class="action-icon">👤</button>
             <div class="cart-wrapper">
-                <button id="cartBtn" class="action-icon">🛒</button>
-                <span id="cartCount">0</span>
             </div>
-        </div>
-    </header>
-
-    <main class="store-layout">
-        <div class="section-title">
-            <h2>Catálogo Destacado</h2>
-            <p>8 títulos imprescindibles para tu colección</p>
-        </div>
-
-        <div class="game-grid">
-            <div class="game-card">
-                <div class="badge-price">NEW</div>
-                <img src="https://via.placeholder.com/200x250" alt="Juego 1">
-                <div class="game-info">
-                    <h3>The Legend of Zelda</h3>
-                    <span class="price">280.000 COP</span>
-                    <button class="add-to-cart" onclick="addToCart('Zelda', 280000)">Añadir al Carrito</button>
-                </div>
-            </div>
-
-            <div class="game-card">
-                <img src="https://via.placeholder.com/200x250" alt="Juego 2">
-                <div class="game-info">
-                    <h3>Halo Infinite</h3>
-                    <span class="price">220.000 COP</span>
-                    <button class="add-to-cart" onclick="addToCart('Halo', 220000)">Añadir al Carrito</button>
-                </div>
-            </div>
-            
-            </div>
-    </main>
-
-    <div id="sideCart" class="side-drawer">
-        <div class="drawer-header"><h3>Carrito</h3><button id="closeCart">X</button></div>
-        <div id="cartItems"></div>
-        <button class="checkout-btn">Finalizar Compra</button>
-    </div>
-
-    <script src="../home/main.js"></script>
+<body>
+    
+  <nav></nav>
+  <div class="layer"></div>
+  <div id="toast" class="carrito vaciado"></div>
+  <div class="modal-overlay"></div>
+  <script src="app.js"></script>
+  <!-- Code injected by live-server -->
+  <script></script>
 </body>
 </html>
+ 
+        </div>
+        
+    </header>
+
+
+<div id="productos"></div>
+  </div>
+  <!-- Puedes agregar más capas (slides) aquí -->
+</div>
+   </head>
+<body>
+
+<div class="slider" id="slider">
+  <div class="slides" id="slides">
+    <img src="https://preview.redd.it/top-10-best-selling-games-in-the-us-in-2025-v0-pyv016u484gg1.jpeg?width=1080&crop=smart&auto=webp&s=1284e2b616b24d3a93c6f7bb30eeef747e77bf9d">
+    <img src="https://portalgeek.co/wp-content/uploads/2024/08/juegos-de-los-2000-1024x590.webp">
+    <img src="https://niveloculto.com/wp-content/uploads/2026/01/Steam-libreria.webp">
+  </div>
+
+  <button id="prev">❮</button>
+  <button id="next">❯</button>
+</div>
+
+  <!-- Botones de filtro -->
+  <div class="filtros">
+    <button class="btn-filtro">Todos</button>
+    <button class="btn-filtro">xbox</button>
+    <button class="btn-filtro">playstation</button>
+    <button class="btn-filtro">nintendo</button>
+     <button class="btn-filtro">accesorios</button>
+  </div>
+
+
+  <div class="container">
+    <!-- Cuadrícula de productos -->
+    <div id="productGrid" class="grid"></div>
+
+    <!-- Barra lateral del carrito -->
+    <div class="cart">
+      <h3>🛒 Carrito (<span id="count">0</span>)</h3>
+      <div id="cartItems"></div>
+      <div class="total">
+        Total: <span id="subtotal">$0</span>
+      </div>
+      <button class="finalizar-compra">Finalizar compra</button>
+    </div>
+  </div>
+
+  <!-- Modal de confirmación -->
+  <div id="overlay" class="overlay" style="display:none;">
+    <div class="modal">
+      <div class="check">✔</div>
+      <h2>¡Pedido confirmado!</h2>
+      <p id="mensajePedido"></p>
+      <button onclick="cerrarModal()">Seguir comprando</button>
+    </div>
+  </div>
+  
+
+  <script src="../home/main.js"></script>
+    <script src="12.js"></script>
